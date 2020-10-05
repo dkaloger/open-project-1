@@ -1,10 +1,10 @@
-﻿using System.Collections.Generic;
+﻿using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.Events;
 
-[CreateAssetMenu( fileName="Input Reader" , menuName="Game/Input Reader" )]
-public class InputReader : ScriptableObject, GameInput.IGameplayActions
+public class InputReader : MonoBehaviour, GameInput.IGameplayActions
 {
 	public UnityAction jumpEvent;
 	public UnityAction jumpCanceledEvent;
